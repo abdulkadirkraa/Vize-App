@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".Malzeme">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/odevlogo" />
+
+    <TextView
+        android:id="@+id/txtcorbaadi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:textSize="24sp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Tuz Oranı"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"/>
+
+    <SeekBar
+        android:id="@+id/seekbartuz"
+        android:theme="@style/Platform.MaterialComponents"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="350dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:max="2"
+        android:progress="0" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Acı Oranı"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"/>
+
+    <SeekBar
+        android:id="@+id/seekbaraci"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="350dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:progressBackgroundTint="@color/white"
+        android:max="2"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lütfen İstediklerinizi İşaretleyiniz"
+        android:textSize="24sp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#FF0000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <Switch
+            tools:ignore=",UseSwitchCompatOrMaterialXml"
+            android:theme="@style/Platform.MaterialComponents"
+            android:id="@+id/switchsarimsak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            android:text="Sarımsak" />
+
+        <Switch
+            android:id="@+id/switchnane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            android:text="Nane" />
+
+        <Switch
+            android:id="@+id/switchdil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            android:text="Dil" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <Switch
+            android:id="@+id/switchterbiye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Terbiye"
+            android:visibility="invisible"
+            android:textColor="@color/white" />
+
+        <Switch
+            android:id="@+id/switchbeyin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Beyin"
+            android:visibility="invisible"
+            android:textColor="@color/white" />
+
+        <Switch
+            android:id="@+id/switchsirke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sirke"
+            android:visibility="invisible"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/switchkrema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Krema"
+            android:visibility="invisible"
+            android:textColor="@color/white" />
+
+        <Switch
+            android:id="@+id/switchyag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Yağ"
+            android:visibility="invisible"
+            android:textColor="@color/white" />
+
+        <Switch
+            android:id="@+id/switchkasar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kaşar"
+            android:visibility="invisible"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/switchkitir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kıtır"
+            android:visibility="invisible"
+            android:textColor="@color/white" />
+
+        <Switch
+            android:id="@+id/switchlimon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Limon"
+            android:visibility="invisible"
+            android:textColor="@color/white" />
+
+        <Switch
+            android:id="@+id/switchtozbiber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Toz Biber"
+            android:visibility="invisible"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ekstra İstediklerinizi Yazabilirsiniz"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:textColor="#FF0000"/>
+
+    <EditText
+        android:id="@+id/edittxtekstra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:hint="Başka Bir Arzunuz?"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btnsiparis"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#FF0000"
+        android:text="Sipariş Ver" />
+
+</LinearLayout>

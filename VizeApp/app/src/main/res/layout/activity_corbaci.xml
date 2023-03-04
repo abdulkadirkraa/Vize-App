@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Corbaci"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/odevlogo" />
+
+    <CheckBox
+        android:id="@+id/checkcorba"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Çorba"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="160dp"
+                android:id="@+id/rdg"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/radioezogelin"
+                    android:layout_width="match_parent"
+                    android:layout_height="36sp"
+                    android:text="Ezogelin"
+                    android:visibility="invisible"
+                    android:textColor="@color/white" />
+                <RadioButton
+                    android:id="@+id/radiodugun"
+                    android:layout_width="match_parent"
+                    android:layout_height="36sp"
+                    android:visibility="invisible"
+                    android:text="Düğün"
+                    android:textColor="@color/white" />
+                <RadioButton
+                    android:id="@+id/radiomercimek"
+                    android:layout_width="match_parent"
+                    android:layout_height="36sp"
+                    android:text="Mercimek"
+                    android:visibility="invisible"
+                    android:textColor="@color/white" />
+                <RadioButton
+                    android:id="@+id/radiobrokoli"
+                    android:layout_width="match_parent"
+                    android:layout_height="36sp"
+                    android:text="Brokoli"
+                    android:visibility="invisible"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/radiokelle"
+                    android:layout_width="match_parent"
+                    android:layout_height="36sp"
+                    android:text="Kelle-Paça"
+                    android:visibility="invisible"
+                    android:textColor="@color/white" />
+                <RadioButton
+                    android:id="@+id/radioyayla"
+                    android:layout_width="match_parent"
+                    android:layout_height="36sp"
+                    android:text="Yayla"
+                    android:visibility="invisible"
+                    android:textColor="@color/white" />
+                <RadioButton
+                    android:id="@+id/radiosehriye"
+                    android:layout_width="match_parent"
+                    android:layout_height="36sp"
+                    android:text="Şehriye"
+                    android:visibility="invisible"
+                    android:textColor="@color/white" />
+                <RadioButton
+                    android:id="@+id/radiodomates"
+                    android:layout_width="match_parent"
+                    android:layout_height="36sp"
+                    android:text="Domates"
+                    android:visibility="invisible"
+                    android:textColor="@color/white" />
+                <RadioButton
+                    android:id="@+id/radioTarhana"
+                    android:layout_width="match_parent"
+                    android:layout_height="36sp"
+                    android:text="Tarhana"
+                    android:visibility="invisible"
+                    android:textColor="@color/white" />
+                <RadioButton
+                    android:id="@+id/radiomantar"
+                    android:layout_width="match_parent"
+                    android:layout_height="36sp"
+                    android:text="Mantar"
+                    android:visibility="invisible"
+                    android:textColor="@color/white" />
+                <RadioButton
+                    android:id="@+id/radioiskembe"
+                    android:layout_width="match_parent"
+                    android:layout_height="36sp"
+                    android:text="İşkembe"
+                    android:visibility="invisible"
+                    android:textColor="@color/white" />
+                <RadioButton
+                    android:id="@+id/radiotavuk"
+                    android:layout_width="match_parent"
+                    android:layout_height="36sp"
+                    android:text="Tavuk"
+                    android:visibility="invisible"
+                    android:textColor="@color/white" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btndevam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:backgroundTint="#C50B0B"
+            android:visibility="invisible"
+            android:text="Devam" />
+    </LinearLayout>
+
+</LinearLayout>
